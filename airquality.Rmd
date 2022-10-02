@@ -1,0 +1,18 @@
+---
+title: "Untitled"
+author: "LIURUOBING"
+date: "2022-10-02"
+output:
+  word_document: default
+  pdf_document: default
+---
+
+```{r airquality}
+airquality[1:10,]
+```
+## I chose the first ten rows of the air quality dataset as the data frame I wanted to make.
+```{r}
+good <- complete.cases(airquality)
+airquality[good,][1:10,]
+```
+## In the same chunk clean the dataset from NA values.
